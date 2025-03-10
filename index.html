@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <style>
+      p {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body class="grid-contenedor">
+    <header id="header" class="header">
+      <h1>Bienvenidos a Mi Página Web</h1>
+      <p
+        style="
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        "
+      >
+        Esta es una página de ejemplo para el ejercicio
+      </p>
+    </header>
+    <main id="main" class="main">
+      <h2>Acerca de Nosotros</h2>
+      <p>Somos una empresa dedicada a ofrecer soluciones web</p>
+    </main>
+    <section class="section">
+      <h2>Nuestros Servicios</h2>
+      <ol type="A">
+        <li class="aws">AWS</li>
+        <li class="azure">Azure</li>
+        <li class="destacado">Tesla</li>
+      </ol>
+      <a href="https://aws.amazon.com/es/?nc2=h_lg" target="_blank"
+        >Ver más servicios</a
+      >
+    </section>
+    <form action="#" method="post" class="sidebar">
+      <fieldset>
+        <legend>Formulario</legend>
+        <fieldset>
+          <legend>Información Personal</legend>
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            required
+            placeholder="Juan"
+          />
+          <label for="apellido">Apellido:</label>
+          <input
+            type="text"
+            name="apellido"
+            id="apellido"
+            required
+            placeholder="Perez"
+          />
+          <label for="nacimiento">Fecha de nacimiento:</label>
+          <input type="date" name="nacimiento" id="nacimiento" required />
+          <label for="genero">Género:</label>
+          <label
+            ><input
+              type="radio"
+              name="genero"
+              value="masculino"
+            />Masculino</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="genero"
+              value="femenino"
+            />Femenino</label
+          >
+          <label><input type="radio" name="genero" value="otro" />Otro</label>
+        </fieldset>
+        <fieldset>
+          <legend>Información de Contacto</legend>
+          <label for="correo">Correo electrónico:</label>
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            required
+            placeholder="abc@abc.com"
+          />
+          <label for="telefono">Correo electrónico:</label>
+          <input
+            type="tel"
+            name="telefono"
+            id="telefono"
+            required
+            placeholder="+00 555 66 77 88"
+          />
+          <label for="direccion">Dirección:</label>
+          <textarea name="direccion" id="direccion"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Información de Cuenta</legend>
+          <label for="usuario">Usuario:</label>
+          <input
+            type="text"
+            name="usuario"
+            id="usuario"
+            placeholder="usuario01"
+            required
+          />
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" name="contrasena" id="contrasena" required />
+          <label for="c.contrasena">Confirma tu contraseña:</label>
+          <input
+            type="password"
+            name="c.contrasena"
+            id="c.contrasena"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Preferencias</legend>
+          <label for="color">Elige tu color favorito:</label>
+          <select name="color" id="color">
+            <option value="rojo">Rojo</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="amarillo">Amarillo</option>
+          </select>
+          <label for="condiciones"
+            >Acepto los términos y las condiciones.</label
+          >
+          <input type="checkbox" name="condiciones" id="condiciones" required />
+        </fieldset>
+        <label for=""></label>
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+    <footer class="footer">
+      <a href="mailto:info@miempresa.com">Enviar correo electrónico</a>
+      <a href="tel:+1234567890">Llamar por teléfono</a>
+      <p>&copy; Mi Empresa. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
