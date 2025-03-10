@@ -30,28 +30,31 @@
       <h2>Acerca de Nosotros</h2>
       <h3>Somos una empresa dedicada a ofrecer soluciones web</h3>
     </main>
-    <div><div class="circulo"></div></div>
     <div>
-      <div class="inline-block-div">Div1</div>
+      <div class="circulo animacion-mover-derecha ocultar-en-movil"></div>
+    </div>
+    <div>
+      <div class="inline-block-div azure">Div1</div>
       <div class="inline-block-div">Div2</div>
       <div class="inline-block-div">Div3</div>
     </div>
     <div>
-      <div class="relative-move-down">
-        <p>Este div se ha movido 15px hacia abajo.</p>
+      <div class="relative-move-down shadow">
+        <p class="dos-columnas">Este div se ha movido 15px hacia abajo.</p>
       </div>
     </div>
     <section class="section">
       <h2>Nuestros Servicios</h2>
-      <ol type="A">
+      <ol type="A" class="menu-horizontal">
         <div><li class="aws">AWS</li></div>
-        <li class="azure">Azure</li>
+        <li>Azure</li>
         <li class="destacado">Tesla</li>
       </ol>
       <a href="https://aws.amazon.com/es/?nc2=h_lg" target="_blank"
         >Ver más servicios</a
       >
     </section>
+    <button class="boton-absoluto">Absoluto</button>
     <form action="#" method="post" class="sidebar">
       <fieldset>
         <legend>Formulario</legend>
@@ -148,10 +151,15 @@
           <input type="checkbox" name="condiciones" id="condiciones" required />
         </fieldset>
         <label for=""></label>
-        <button type="submit">Enviar</button>
+        <button type="submit" class="boton-trans">Enviar</button>
       </fieldset>
     </form>
-
+    <div class="spinner"></div>
+    <img
+      class="gatito-rota imagen-grayscale imagen-con-overlay"
+      src="./img/gato.jpg"
+      alt="Gatito a rotar"
+    />
     <footer class="footer">
       <a href="mailto:info@miempresa.com">Enviar correo electrónico</a>
       <a href="tel:+1234567890">Llamar por teléfono</a>
