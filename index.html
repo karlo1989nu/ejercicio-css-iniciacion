@@ -6,30 +6,45 @@
     <title>Mi Página Web</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <style>
-      p {
-        margin: 20px;
+      h1 {
+        color: blue;
       }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="grid-contenedor">
+  <body class="grid-contenedor emblema-one-regular">
     <header id="header" class="header">
-      <h1>Bienvenidos a Mi Página Web</h1>
-      <p
-        style="
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        "
-      >
-        Esta es una página de ejemplo para el ejercicio
-      </p>
+      <div class="auto-marg"><h1>Bienvenidos a Mi Página Web</h1></div>
+      <div id="contenedor">
+        <p style="color: red">
+          Esta es una página de ejemplo para el ejercicio
+        </p>
+      </div>
     </header>
     <main id="main" class="main">
       <h2>Acerca de Nosotros</h2>
-      <p>Somos una empresa dedicada a ofrecer soluciones web</p>
+      <h3>Somos una empresa dedicada a ofrecer soluciones web</h3>
     </main>
+    <div><div class="circulo"></div></div>
+    <div>
+      <div class="inline-block-div">Div1</div>
+      <div class="inline-block-div">Div2</div>
+      <div class="inline-block-div">Div3</div>
+    </div>
+    <div>
+      <div class="relative-move-down">
+        <p>Este div se ha movido 15px hacia abajo.</p>
+      </div>
+    </div>
     <section class="section">
       <h2>Nuestros Servicios</h2>
       <ol type="A">
-        <li class="aws">AWS</li>
+        <div><li class="aws">AWS</li></div>
         <li class="azure">Azure</li>
         <li class="destacado">Tesla</li>
       </ol>
@@ -136,6 +151,7 @@
         <button type="submit">Enviar</button>
       </fieldset>
     </form>
+
     <footer class="footer">
       <a href="mailto:info@miempresa.com">Enviar correo electrónico</a>
       <a href="tel:+1234567890">Llamar por teléfono</a>
